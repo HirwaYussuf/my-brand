@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    text-align: center;
+
+}
+fieldset{
+    background-color: transparent;
+    width: 30%;
+    height: 82%;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.15);
+    border: none;
+    border-radius: 20%;
+    margin-right: 15%;
+}
+.form-container{
+    position: relative ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 43%;
+    background-image: linear-gradient(-45deg, #d66f30 0%, #c5743e 100%);
+    transform: translateY(-65%);
+    border-radius: 50%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+}
+.title{
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px
+}
+.input-field{
+    max-width: 300px;
+    width: 100%;
+    height: 20%;
+    background-color: #f0f0f0;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    border-radius: 55px;
+}
+.input-field i{
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    font-size: 1.5rem;
+}
+.input-field input{
+    background: none;
+    outline: none;
+    border: none;
+   line-height: 1;
+   font-weight: 600;
+   font-size: 1.1rem;
+   color: #333;
+}
+.input-field input:placeholder-shown{
+    color: #aaa;
+    font-weight: 500;
+}
+.btn{
+    width: 150px;
+    height: 49px;
+    outline: none;
+    border: none;
+    border-radius: 48px;
+    background-color: #d66f30 ;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transform: all 0.5s;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #c5743e;
+}
+a{
+    text-decoration: none;
+    color: #d66f30;
+}
+.link1{
+    margin-top: 5px;
+}
